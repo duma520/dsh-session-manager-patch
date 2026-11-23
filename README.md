@@ -43,7 +43,7 @@
 ## 重打（插件升级后必做）
 
 ```powershell
-cd G:\Python_Code\dsh-session-manager-patch
+cd 你的项目目录\dsh-session-manager-patch
 powershell -ExecutionPolicy Bypass -File .\apply-patch.ps1
 ```
 
@@ -64,8 +64,8 @@ dsh-session-manager-patch/
 ## 回滚
 
 ```powershell
-$t = "C:\Users\duma520\.dsh\profiles\desktop\node_modules\dsh-session-manager\lib"
-$b = "G:\Python_Code\dsh-session-manager-patch\version\20261117-v1\lib"
+$t = "$env:USERPROFILE\.dsh\profiles\desktop\node_modules\dsh-session-manager\lib"
+$b = "你的项目目录\dsh-session-manager-patch\version\20261117-v1\lib"
 foreach ($f in "client.js","index.js","annotation-store.js") {
   Copy-Item "$b\$f" "$t\$f.bak" -Force
   Remove-Item "$t\$f" -Force
