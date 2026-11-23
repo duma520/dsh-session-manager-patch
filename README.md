@@ -1,5 +1,7 @@
 # dsh-session-manager 全选上限热修补丁
 
+> **一句话**：DSH 会话管理器上限热修补丁：放开 dsh-session-manager 0.7.8 写死的「批量操作最多 200 项」，装好后可一次勾选全部会话做批量删除、导出、移动，不用再分批点十几次；以补丁形式覆盖，卸载即恢复原样。
+
 把 [dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) 0.7.8 的「批量操作最多 200 项」放开为**不设上限**。
 
 ## 为什么不能只删 200
